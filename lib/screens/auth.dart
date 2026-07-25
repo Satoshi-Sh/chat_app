@@ -31,13 +31,11 @@ class _AuthScreenState extends State<AuthScreen> {
           email: _enteredEmail,
           password: _enteredPassword,
         );
-        print(userCredentials);
       } else {
         final userCredentials0 = _firebase.createUserWithEmailAndPassword(
           email: _enteredEmail,
           password: _enteredPassword,
         );
-        print(userCredentials0);
       }
     } on FirebaseAuthException catch (error) {
       // if (error.code == 'email-already-in-use') {}
